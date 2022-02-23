@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <div>Lista delle Categories</div>
-                        <a href="{{route("posts.create")}}"><button type="button" class="btn createBtn border ">Create New Tags</button></a>
+                        <a href="{{route("categories.create")}}"><button type="button" class="btn createBtn border ">Create New Ctegory</button></a>
                     </div>
                     <div class="card-body">
                         <div class="row font-weight-bold mb-1">
@@ -32,13 +32,13 @@
                                 {{$category->slug}}
                             </div>
                             <div class="col-2 my-1">
-                                <a href="{{route("posts.show", $category->id)}}"><button type="button" class="btn showBtn">Show</button></a>
+                                <a href="{{route("categories.show", $category->id)}}"><button type="button" class="btn showBtn">Show</button></a>
                             </div>
                             <div class="col-2 my-1">
-                                <a href="{{route("posts.edit", $category->id)}}"><button type="button" class="btn  updateBtn">Update</button></a>
+                                <a href="{{route("categories.edit", $category->id)}}"><button type="button" class="btn  updateBtn">Update</button></a>
                             </div>
                             <div class="col-2 my-1">
-                                <form action="{{route("posts.destroy", $category->id)}}" method="POST" >
+                                <form action="{{route("categories.destroy", $category->id)}}" method="POST" >
                                     @csrf
                                     @method("DELETE")
                                     <button type="submit" class="btn  deleteBtn">Delete</button>
