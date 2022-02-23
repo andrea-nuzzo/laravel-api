@@ -11,7 +11,7 @@ class PostController extends Controller
     public function index(){
         
         // solo i pubblicati
-        $posts = Post::where("pubished", true)->get();
+        $posts = Post::where("published", true)->get();
 
         return response()->json($posts);
     }
