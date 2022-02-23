@@ -13,13 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// *--- Area Front-Office Pubblica ---*
 Route::get('/', function () {
-    return view('welcome');
+    return view('front');
 });
 
 Auth::routes();
 
-// *--- Area Priovata ---*
+// *--- Area Back-Office Privata ---*
 Route::prefix('admin')->namespace('Admin')->middleware('auth')->group(function(){
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('posts', 'PostController');
