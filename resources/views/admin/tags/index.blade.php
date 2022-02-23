@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <div>Lista dei Tags</div>
-                        <a href="{{route("posts.create")}}"><button type="button" class="btn createBtn border ">Create New Tags</button></a>
+                        <a href="{{route("tags.create")}}"><button type="button" class="btn createBtn border ">Create New Tags</button></a>
                     </div>
                     <div class="card-body">
                         <div class="row font-weight-bold mb-1">

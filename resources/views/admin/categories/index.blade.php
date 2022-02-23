@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <div>Lista delle Categories</div>
-                        <a href="{{route("categories.create")}}"><button type="button" class="btn createBtn border ">Create New Ctegory</button></a>
+                        <a href="{{route("categories.create")}}"><button type="button" class="btn createBtn border ">Create New Category</button></a>
                     </div>
                     <div class="card-body">
                         <div class="row font-weight-bold mb-1">
